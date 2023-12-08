@@ -1,0 +1,85 @@
+//sabit veriler
+
+//ekrana basılacak millerin verisi
+
+export const mailData = [
+    {   id: 1,
+        sender: 'Hepsiburada',
+        receiver: 'Sema',
+        title: 'Sipaşiniz onaylandı',
+        message: 'Siparişiniz en kısa surede hazırlanıp kargoya verilecektir',
+        date: '5 Aralık',
+    },
+    {
+        id: 2,
+        sender: 'Trendyol',
+        receiver: 'Sema',
+        title: 'Sipariş Onayı',
+        message: 'Merhaba Sema, siparişin onaylandı! Ekiplerimiz en kısa sürede siparişini hazırlayıp kargoya verecek. İyi alışverişler.',
+        date: '3 Aralık',
+    },
+    {
+        id: 3,
+        ender: 'Amazon',
+        receiver: 'Sema',
+        title: 'Order Confirmation',
+        message: 'Hello Sema, your order has been confirmed! Our teams will prepare and dispatch your order as soon as possible. Thank you.',
+        date: '2 Aralık',
+    },
+       {
+        id: 4,
+        sender: 'LinkedIn',
+        receiver: 'Sema',
+        title: 'Yeni bildirim: Arkadaşlık isteği',
+        message: 'Birisi size arkadaşlık isteği gönderdi. Kabul etmek isterseniz profiline giderek isteği onaylayabilirsiniz',
+        date: '1 Aralık',
+       },
+       {
+        id: 5,
+        sender: 'Instagram',
+        receiver: 'Sema',
+        title: 'Sipariş Onaylandı',
+        message: 'Birisi size arkadaşlık isteği gönderdi. Kabul etmek isterseniz profiline giderek isteği onaylayabilirsiniz',
+        date: '15 Aralık',
+       },
+       {
+        id: 6,
+        sender: 'QNB Finansbank',
+        receiver: 'Sema',
+        title: 'Sipariş Onayı',
+        message: 'Merhaba Sema, bankanızdan kredi destegi',
+        date: '25 Aralık',
+       },
+       {
+        id: 7,
+        sender: 'Trendyol',
+        receiver: 'Sema',
+        title: 'Sipariş Durumu Güncellendi',
+        message: 'Merhaba Sema, sipariş durumun güncellendi! Şu an hazırlık aşamasındayız ve siparişin en kısa sürede kargoya verilecek. Keyifli alışverişler.',
+        date: '5 Aralık',
+       },
+       {
+        id: 8,
+        sender: 'Amazon',
+        receiver: 'Sema',
+        title: 'Your Order Is On the Way!',
+        message: 'Hello Sema, your order has been confirmed and is now on its way. It will be with you shortly. Enjoy your shopping.',
+        date: '7 Aralık',
+       },
+       {
+        id: 9,
+        sender: 'LinkedIn',
+        receiver: 'Sema',
+        title: 'yeni bir arkadaslık istegin var',
+        message: 'Kacırdığın bildirmler için lutfen tıklayın',
+        date: '6 Aralık',
+       },
+    {
+        id: 10,
+        sender: 'Instagram',
+        receiver: 'Sema',
+        title: 'yeni bir arkadaslık istegin var',
+        message: 'Birisi size arkadaşlık isteği gönderdi. Kabul etmek isterseniz profiline giderek isteği onaylayabilirsiniz',
+        date: '4 Aralık',
+    }
+]
