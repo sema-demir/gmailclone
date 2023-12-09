@@ -19,6 +19,77 @@
   background: #d8dbdd;
 }
 
+.modal-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+}
+
+.modal {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.modal input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  margin: 0 6px;
+  outline: none;
+}
+.modal textarea {
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  margin: 0 6px;
+  padding-top: 10px;
+  font-family: "Roboto";
+}
+.modal #send {
+  width: 140px;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  background: #1b61d1;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+.modal #send:hover {
+  background: #043380;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+}
+.header button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header button:hover {
+  background: gray;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -106,13 +177,23 @@ nav ul {
   gap: 16px;
 }
 nav ul li {
+  list-style: none;
+}
+nav ul li label {
+  display: flex;
   padding: 8px;
   margin-left: 4px;
-  display: flex;
   gap: 12px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
-nav ul li:hover {
+nav ul li label:hover {
+  background: #d0ebff;
+}
+nav ul li input {
+  display: none;
+}
+nav ul li:has(input:checked) label {
   background: #d0ebff;
 }
 nav .bottom {
@@ -157,6 +238,9 @@ main .mails {
        column-gap: 5px;
   cursor: pointer;
 }
+.mail #star {
+  color: goldenrod;
+}
 .mail:hover {
   box-shadow: 0 0 30px rgba(128, 128, 128, 0.4);
 }
@@ -184,20 +268,23 @@ main .mails {
   text-align: end;
   white-space: nowrap;
 }
-.mail button {
+.mail #button-wrapper {
   display: none;
+}
+.mail button {
   border: none;
   background: transparent;
   cursor: pointer;
   transition: all 0.3 s;
-  padding: 4px;
+  padding: 4px 10px;
   border-radius: 5px;
 }
 .mail button:hover {
   background: rgb(201, 200, 200);
 }
-.mail:hover > button {
-  display: block;
+.mail:hover > #button-wrapper {
+  display: flex;
+  justify-content: end;
 }
 .mail:hover > .time {
   display: none;

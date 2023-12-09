@@ -54,28 +54,47 @@
         <!-- nav yönlendirme alanı  -->
         <ul>
           <li>
+            
+            <input checked id="cat1" type="radio" name="cat">
+            <label for="cat1">
             <i class="bi bi-image"></i>
             <span>Gelen Kutusu</span>
+          </label>
           </li>
           <li>
+            <input id="cat2" type="radio" name="cat">
+            <label for="cat2">
             <i class="bi bi-star"></i>
             <span>Yıldızlı</span>
+            </label>
           </li>
           <li>
+            <input id="cat3" type="radio" name="cat">
+            <label for="cat3">
             <i class="bi bi-clock"></i>
             <span>Zamanlı</span>
+            </label>
           </li>
           <li>
+            <input id="cat4" type="radio" name="cat">
+            <label for="cat4">
             <i class="bi bi-arrow-right-circle"></i>
             <span>Gönderilenler</span>
+            </label>
           </li>
           <li>
+            <input id="cat5" type="radio" name="cat">
+            <label for="cat5">
             <i class="bi bi-archive"></i>
             <span>Taslaklar</span>
+            </label>
           </li>
           <li>
+            <input id="cat6" type="radio" name="cat">
+            <label for="cat6">
             <i class="bi bi-arrow-down"></i>
             <span>Daha Fazla</span>
+            </label>
           </li>
         </ul>
         <!-- nav kategoriler -->
@@ -119,15 +138,30 @@
       </main>
       <!-- sag kısım  -->
       <aside>
-        <img src="/images/calendar-48.png" alt="">
-        <img src="/images/keep-48.png" alt="">
-        <img src="/images/task-48.png" alt="">
-        <img src="/images/account-48.png" alt="">
+        <img src="/images/calendar-48.png" alt="" />
+        <img src="/images/keep-48.png" alt="" />
+        <img src="/images/task-48.png" alt="" />
+        <img src="/images/account-48.png" alt="" />
         <span></span>
         <i class="bi bi-plus-lg icon"></i>
-
       </aside>
     </section>
+    <!-- eklme modalı -->
+    <div class="modal-wrapper">
+      <form class="modal">
+        <div class="header">
+          <h5>Yeni İleti</h5>
+          <button class="close-modal" type="button">
+            <span>x</span>
+          </button>
+        </div>
+          <input type="text" placeholder="Kime" />
+          <input type="text" placeholder="Konu" />
+          <textarea></textarea>
+          <button id="send" type="submit">Gönder</button>
+       
+      </form>
+    </div>
 
     <script type="module" src="./scripts/main.js"></script>
   </body>

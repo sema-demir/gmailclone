@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import "variables";
 @import "breakpoint";
+@import "_modal";
 
 * {
   margin: 0;
@@ -89,20 +90,30 @@ nav {
     display: grid;
     gap: 16px;
     li {
-      padding: 8px;
-      margin-left: 4px;
-      display: flex;
-      gap: 12px;
-      border-radius: 0 0 15px 15px;
-      &:hover {
-        background: $light-blue;
+      list-style: none;
+      label {
+        display: flex;
+        padding: 8px;
+        margin-left: 4px;
+        gap: 12px;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+        &:hover {
+          background: $light-blue;
+        }
+      }
+      
+      input {
+        display: none;
+      }
+      &:has(input:checked) label {
+        background:$light-blue;
       }
     }
   }
   .bottom {
     margin-left: 8px;
   }
-  
 }
 .hide {
   span {
@@ -142,6 +153,10 @@ main {
   border-bottom: 1px solid white;
   column-gap: 5px;
   cursor: pointer;
+
+  #star {
+    color: goldenrod;
+  }
   &:hover {
     box-shadow: 0 0 30px rgba(128, 128, 128, 0.4);
   }
@@ -155,7 +170,7 @@ main {
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    
+
     gap: 5px;
 
     .title {
@@ -171,20 +186,24 @@ main {
     text-align: end;
     white-space: nowrap;
   }
-  button {
+  #button-wrapper {
     display: none;
+  }
+
+  button {
     border: none;
     background: transparent;
     cursor: pointer;
     transition: all 0.3 s;
-    padding: 4px;
+    padding: 4px 10px;
     border-radius: 5px;
     &:hover {
       background: rgb(201, 200, 200);
     }
   }
-  &:hover > button {
-    display: block;
+  &:hover > #button-wrapper {
+    display: flex;
+    justify-content: end;
   }
   &:hover > .time {
     display: none;
@@ -206,7 +225,7 @@ aside {
   }
   img {
     @extend .icon;
-   cursor: pointer;
+    cursor: pointer;
     width: 30px;
     height: 30px;
   }
