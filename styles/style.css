@@ -126,7 +126,7 @@ header .middle form {
 header .middle form input {
   border: none;
   outline: none;
-  border-radius: 10px;
+  font-size: 18px;
   background: transparent;
 }
 @media (max-width: 768px) {
@@ -311,4 +311,10 @@ aside img {
   cursor: pointer;
   width: 30px;
   height: 30px;
+}
+
+.warn {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

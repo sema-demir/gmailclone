@@ -46,7 +46,7 @@ export const mailData = [
         id: 6,
         sender: 'QNB Finansbank',
         receiver: 'Sema',
-        title: 'Sipariş Onayı',
+        title: 'Hesap Özeti',
         message: 'Merhaba Sema, bankanızdan kredi destegi',
         date: '25 Aralık',
        },
