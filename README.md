@@ -17,3 +17,5 @@ Bu proje, Gmail'in temel özelliklerini içeren bir klon uygulamadır. Proje, ku
 ## Teknolojiler
 
 - **Frontend:** HTML, CSS, JavaScript
+
+<h3>Ekran Görüntüsü</h3>
